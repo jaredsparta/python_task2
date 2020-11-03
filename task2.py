@@ -27,4 +27,8 @@ for name in list_names_lower:
         r_list.append(name)
     else:
         continue
-print("The names of even length were:", r_list)
+
+if r_list:
+    print("The names of even length were:", r_list)
+else:
+    print("There were no names of even length")
