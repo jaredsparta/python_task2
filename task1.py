@@ -1,6 +1,7 @@
 from datetime import *
 from math import floor
 
+# Asks for name and age and calculates the year they born
 name = input("What's your name? ").title()
 age = int(input("How old are you? "))
 year = datetime.today().year - age
@@ -11,9 +12,12 @@ day = int(input("\nWhat day were you born? "))
 month = int(input("What month were you born (e.g. if born in MAY, input 5)? "))
 year = int(input("What was your birth year? "))
 
+# Stores the day, month, year they inputted into a datetime object
+# Calculates the age using the current datetime and stores it in a timedelta object
 dob = datetime(year, month, day)
 age = datetime.today() - dob
 
+# Calculates the age in years and hours
 age_years = age / timedelta(days = 365)
 age_hours = age / timedelta(hours = 1)
 
