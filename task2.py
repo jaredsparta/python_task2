@@ -28,6 +28,8 @@ for name in list_names_lower:
     else:
         continue
 
+# If the list is not empty then it will print the first line
+# Otherwise the list is empty and there were no even-numbered names
 if r_list:
     print("The names of even length were:", r_list)
 else:
